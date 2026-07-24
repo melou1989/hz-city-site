@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#B23A2E"/><stop offset="100%" stop-color="#7a2820"/>
+  </linearGradient></defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <path d="M0,420 Q100,380 200,420 T400,420 T600,420 T800,420" fill="none" stroke="#F5F7F1" stroke-width="3" opacity="0.3"/>
+  <text x="400" y="290" font-family="sans-serif" font-size="64" font-weight="900" fill="#F5F7F1" text-anchor="middle">吃喝榜单</text>
+  <text x="400" y="340" font-family="sans-serif" font-size="20" letter-spacing="4" fill="#F1D9B5" text-anchor="middle">FOOD &amp; DRINK</text>
+</svg>
