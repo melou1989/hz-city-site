@@ -1,0 +1,109 @@
+:root{
+  --paper:#F5F7F1;
+  --paper-alt:#EEF2EA;
+  --ink:#1C2B26;
+  --ink-soft:#4B5A54;
+  --lake:#2F5D50;
+  --lake-light:#6C9A85;
+  --osmanthus:#C9963A;
+  --seal:#B23A2E;
+  --line:#DCE3D6;
+  --card:#FFFFFF;
+  --radius:14px;
+  --serif:'Noto Serif SC', serif;
+  --sans:'Noto Sans SC', sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px;}
+
+/* 域名出售横幅 */
+.sale-banner{background:var(--seal);color:#fff;font-size:14px;letter-spacing:.3px;}
+.sale-banner .wrap{display:flex;align-items:center;justify-content:center;gap:10px;padding:9px 20px;text-align:center;flex-wrap:wrap;}
+.sale-banner .tag{border:1px solid rgba(255,255,255,.65);border-radius:999px;padding:1px 10px;font-size:12px;font-weight:600;letter-spacing:1px;}
+.sale-banner b{font-weight:700;}
+.sale-banner a{text-decoration:underline;text-underline-offset:3px;font-weight:600;white-space:nowrap;}
+
+/* 头部 */
+header.site-head{background:var(--paper);padding:28px 0 0;position:relative;}
+.head-row{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:14px;padding-bottom:18px;}
+.brand{display:flex;align-items:baseline;gap:12px;}
+.brand h1{font-family:var(--serif);font-weight:900;font-size:32px;letter-spacing:2px;color:var(--lake);}
+.brand .en{font-size:12px;letter-spacing:3px;color:var(--ink-soft);text-transform:uppercase;}
+.date-weather{display:flex;align-items:center;gap:14px;font-size:13px;color:var(--ink-soft);}
+.date-weather .wchip{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 14px;display:flex;align-items:center;gap:8px;font-weight:600;color:var(--lake);}
+.ripple-divider{width:100%;height:14px;display:block;}
+
+/* 导航 */
+nav.cat-nav{background:var(--lake);}
+nav.cat-nav .wrap{display:flex;gap:26px;overflow-x:auto;padding:12px 20px;}
+nav.cat-nav a{color:#EAF1EC;font-size:14px;font-weight:500;white-space:nowrap;opacity:.88;}
+nav.cat-nav a.active{opacity:1;font-weight:700;border-bottom:2px solid var(--osmanthus);padding-bottom:2px;}
+
+/* Hero 头条 */
+.hero{display:grid;grid-template-columns:1.5fr 1fr;gap:24px;padding:32px 0 8px;}
+.hero-main{background:var(--card);border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);}
+.hero-main img{aspect-ratio:16/9;object-fit:cover;width:100%;}
+.hero-main .body{padding:20px 22px 24px;}
+.seal-tag{display:inline-flex;align-items:center;justify-content:center;background:var(--seal);color:#fff;font-size:12px;font-weight:700;letter-spacing:2px;padding:3px 9px;border-radius:5px;transform:rotate(-2deg);margin-bottom:10px;}
+.hero-main h2{font-family:var(--serif);font-size:24px;font-weight:700;line-height:1.4;margin-bottom:10px;}
+.hero-main p{color:var(--ink-soft);font-size:14px;}
+.hero-side{display:flex;flex-direction:column;gap:14px;}
+.side-item{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;display:flex;gap:12px;align-items:center;}
+.side-item .num{font-family:var(--serif);font-weight:900;font-size:22px;color:var(--osmanthus);width:26px;}
+.side-item h3{font-size:14.5px;font-weight:600;line-height:1.4;}
+
+/* 板块标题 */
+.section{padding:38px 0 6px;}
+.section-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;}
+.section-head .seal-tag{margin-bottom:0;}
+.section-head h2{font-family:var(--serif);font-size:21px;font-weight:700;}
+.section-head .more{margin-left:auto;font-size:13px;color:var(--lake-light);font-weight:600;}
+
+/* 卡片网格 */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:transform .15s ease, box-shadow .15s ease;}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(47,93,80,.12);}
+.card img{aspect-ratio:4/3;object-fit:cover;width:100%;}
+.card .body{padding:14px 16px 16px;}
+.card .meta{font-size:12px;color:var(--lake-light);font-weight:600;margin-bottom:6px;}
+.card h3{font-size:15px;font-weight:600;line-height:1.5;margin-bottom:6px;}
+.card p{font-size:13px;color:var(--ink-soft);}
+
+/* 天气卡 */
+.weather-panel{background:linear-gradient(135deg,var(--lake) 0%,#1f463c 100%);color:#fff;border-radius:var(--radius);padding:22px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
+.weather-panel .temp{font-family:var(--serif);font-size:44px;font-weight:900;}
+.weather-panel .desc{font-size:13px;opacity:.85;margin-top:4px;}
+.weather-panel .grid-w{display:flex;gap:22px;}
+.weather-panel .grid-w div{text-align:center;font-size:12px;opacity:.9;}
+.weather-panel .grid-w b{display:block;font-size:16px;font-weight:700;margin-bottom:2px;}
+
+/* 文章详情页 */
+.article-page{padding:32px 0 60px;max-width:760px;}
+.article-page .seal-tag{margin-bottom:14px;}
+.article-page h1{font-family:var(--serif);font-size:28px;line-height:1.5;margin-bottom:14px;}
+.article-meta{font-size:13px;color:var(--ink-soft);margin-bottom:22px;border-bottom:1px solid var(--line);padding-bottom:18px;}
+.article-body{font-size:16px;color:#2A3A34;}
+.article-body p{margin-bottom:16px;}
+.article-source{margin-top:30px;padding:14px 16px;background:var(--paper-alt);border-radius:10px;font-size:13px;color:var(--ink-soft);}
+
+/* Footer */
+footer{margin-top:56px;background:var(--ink);color:#B9C6BF;padding:34px 0;font-size:13px;}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+footer a{color:#E7D9A9;}
+
+/* 响应式 */
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;}
+  .grid{grid-template-columns:repeat(2,1fr);}
+}
+@media (max-width:560px){
+  .brand h1{font-size:24px;}
+  .grid{grid-template-columns:1fr;}
+  .hero-main h2{font-size:19px;}
+  .section-head h2{font-size:18px;}
+  .weather-panel{flex-direction:column;align-items:flex-start;}
+  .article-page h1{font-size:22px;}
+}
