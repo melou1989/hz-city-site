@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>老牌任务管理工具2Do大改版，这次重构值不值得升级 - 杭州信息港</title>
+<meta name="description" content="老牌任务管理工具 2Do 迎来一次彻底重构，界面、交互和底层逻辑都有调整。少数派作者在体验后给出很高评价，说自己心里最好用的任务管理工具就是它。这次改版到底动了哪些地方，老用户值不值得跟进，下面说说。">
+<meta name="keywords" content="2Do,任务管理工具,待办事项,效率工具">
+<link rel="canonical" href="https://hz.city/articles/20261001-298-2Do.html">
+<meta property="og:title" content="老牌任务管理工具2Do大改版，这次重构值不值得升级">
+<meta property="og:description" content="老牌任务管理工具 2Do 迎来一次彻底重构，界面、交互和底层逻辑都有调整。少数派作者在体验后给出很高评价，说自己心里最好用的任务管理工具就是它。这次改版到底动了哪些地方，老用户值不值得跟进，下面说说。">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700;900&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": "\u8001\u724c\u4efb\u52a1\u7ba1\u7406\u5de5\u51772Do\u5927\u6539\u7248\uff0c\u8fd9\u6b21\u91cd\u6784\u503c\u4e0d\u503c\u5f97\u5347\u7ea7",
+  "description": "\u8001\u724c\u4efb\u52a1\u7ba1\u7406\u5de5\u5177 2Do \u8fce\u6765\u4e00\u6b21\u5f7b\u5e95\u91cd\u6784\uff0c\u754c\u9762\u3001\u4ea4\u4e92\u548c\u5e95\u5c42\u903b\u8f91\u90fd\u6709\u8c03\u6574\u3002\u5c11\u6570\u6d3e\u4f5c\u8005\u5728\u4f53\u9a8c\u540e\u7ed9\u51fa\u5f88\u9ad8\u8bc4\u4ef7\uff0c\u8bf4\u81ea\u5df1\u5fc3\u91cc\u6700\u597d\u7528\u7684\u4efb\u52a1\u7ba1\u7406\u5de5\u5177\u5c31\u662f\u5b83\u3002\u8fd9\u6b21\u6539\u7248\u5230\u5e95\u52a8\u4e86\u54ea\u4e9b\u5730\u65b9\uff0c\u8001\u7528\u6237\u503c\u4e0d\u503c\u5f97\u8ddf\u8fdb\uff0c\u4e0b\u9762\u8bf4\u8bf4\u3002",
+  "image": ["/static/images/placeholder-news.svg"],
+  "datePublished": "2026-10-01T07:06:16.407147+08:00",
+  "dateModified": "2026-10-01T07:06:16.407147+08:00",
+  "publisher": {
+    "@type": "Organization",
+    "name": "杭州信息港",
+    "url": "https://hz.city"
+  },
+  "mainEntityOfPage": "https://hz.city/articles/20261001-298-2Do.html"
+}
+</script>
+
+</head>
+<body>
+
+<div class="sale-banner">
+  <div class="wrap">
+    <span class="tag">域名出售</span>
+    <span><b>hz.city</b> 稀缺双拼城市域名 · 火热出售中 · 价格面议</span>
+    <a href="mailto:sale@hz.city">sale@hz.city</a>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-row">
+    <div class="brand">
+      <a href="/"><h1>杭州信息港</h1></a>
+      <span class="en">HANGZHOU · CITY GUIDE</span>
+    </div>
+    <div class="date-weather">
+      <span>2026年10月01日</span>
+      
+      <span class="wchip">⛅ 小雨 24℃/19℃</span>
+      
+    </div>
+  </div>
+  <svg class="ripple-divider" viewBox="0 0 1200 14" preserveAspectRatio="none">
+    <path d="M0,7 Q30,0 60,7 T120,7 T180,7 T240,7 T300,7 T360,7 T420,7 T480,7 T540,7 T600,7 T660,7 T720,7 T780,7 T840,7 T900,7 T960,7 T1020,7 T1080,7 T1140,7 T1200,7"
+          fill="none" stroke="#C9963A" stroke-width="1.5" opacity="0.6"/>
+  </svg>
+</header>
+
+<nav class="cat-nav">
+  <div class="wrap">
+    <a href="/" class="">首页</a>
+    <a href="/category/news/" class="">杭州热点</a>
+    <a href="/category/life/" class="">生活资讯</a>
+    <a href="/category/food/" class="">吃喝榜单</a>
+    <a href="/category/events/" class="">娱乐演出</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<article class="article-page">
+  <span class="seal-tag">热点</span>
+  <h1>老牌任务管理工具2Do大改版，这次重构值不值得升级</h1>
+  <div class="article-meta">
+    发布时间：2026年10月01日 07:06 · 分类：热点 / 效率工具
+  </div>
+  <img src="/static/images/placeholder-news.svg" alt="老牌任务管理工具2Do大改版，这次重构值不值得升级" style="border-radius:14px;margin-bottom:20px;">
+  <div class="article-body">
+    
+    <p>在待办事项这个品类里，2Do 算是个有年头的老面孔了。它没有后来者那么花哨，靠标签、清单、提醒这些扎实的老功能，一直留着一批用了很多年、也懒得再换的人。这次它被拿出来重新做了一遍，消息在效率工具的小圈子里传得挺快。</p>
+    
+    <p>所谓完全重构，放在软件上是个挺重的说法。一般意味着界面、交互逻辑甚至底层代码都要重新捋一遍，不是换个皮肤、加几个开关就完事。从少数派放出的那篇体验文章看，作者对这次改版评价很高，甚至说这是自己心目中最好用的任务管理工具。不过具体改了什么、改到什么程度，还是得看官方说明和上手实际感受，光看别人的评价容易上头。</p>
+    
+    <p>对普通用户来说，问题其实很简单：手上这份待办清单，到底还要不要挪个地方。这类工具一换，历史数据、同步方式、使用习惯都得跟着重来一遍，成本不算小。真有兴趣的话，先弄清楚数据能不能顺利导出、旧版本还能不能继续用，再决定要不要动手。原文和详细体验可以到少数派那篇里看。</p>
+    
+  </div>
+  <div class="article-source">
+    内容整理自网络公开信息，由AI辅助整理生成，如有侵权或事实错误请联系
+    <a href="mailto:sale@hz.city">sale@hz.city</a> 删除或更正。
+    原始来源：<a href="https://sspai.com/post/115166" rel="nofollow noopener" target="_blank">测试新闻源</a>
+  </div>
+</article>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 杭州信息港 hz.city · 内容整理自网络公开信息，如有侵权请联系删除</div>
+    <div>域名出售咨询：<a href="mailto:sale@hz.city">sale@hz.city</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
